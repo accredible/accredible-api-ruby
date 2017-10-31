@@ -29,7 +29,7 @@ module Accredible
     end
 
     def self.api_end_point(id = nil)
-      Accredible.api_url("/issuer/group/#{id}")
+      Accredible.api_url("/issuer/groups/#{id}")
     end
 
 
