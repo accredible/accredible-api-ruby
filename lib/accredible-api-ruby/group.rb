@@ -25,7 +25,7 @@ module Accredible
 
     def self.view(group_id = nil)
       uri = Group.api_end_point(group_id)
-      Accredible.request(uri) 
+      Accredible.request(uri)
     end
 
     def self.api_end_point(id = nil)
@@ -34,8 +34,7 @@ module Accredible
 
 
     def self.view_all_end_point(page,page_size)
-      Accredible.api_url("/issuer/all_groups?page=#{page}&page_size={page_size}")
+      Accredible.api_url("/issuer/all_groups?page=#{page}&page_size=#{page_size}")
     end
   end
 end
-
