@@ -3,7 +3,7 @@ module Accredible
 
     def self.view(id = nil)
       uri = Credential.api_end_point(id)
-      Accredible.request(uri) 
+      Accredible.request(uri)
     end
 
     def self.create(recipient:, credential:, evidence: [], references: [])
@@ -33,7 +33,7 @@ module Accredible
     end
 
     def self.view_all_end_point(group_id, email,page=1,page_size=20)
-      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size={page_size}")
+      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size=#{page_size}")
     end
   end
 end
