@@ -29,12 +29,12 @@ module Accredible
     end
 
     def self.api_end_point(id = nil)
-      Accredible.api_url("/issuer/groups/#{id}")
+      Accredible.api_url("issuer/groups/#{id}")
     end
 
 
     def self.view_all_end_point(page,page_size)
-      Accredible.api_url("/issuer/all_groups?page=#{page}&page_size=#{page_size}")
+      Accredible.api_url("issuer/all_groups?page=#{page}&page_size={page_size}")
     end
   end
 end
