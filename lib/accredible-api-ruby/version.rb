@@ -1,3 +1,3 @@
 module Accredible
-  VERSION = "0.1.50"
+  VERSION = "0.1.10"
 end
